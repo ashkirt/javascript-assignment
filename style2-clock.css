@@ -1,0 +1,59 @@
+body {
+    background: #444;
+    color: white;
+    text-align: center;
+}
+
+#clock {
+    color: white;
+    font: 20px,Arial;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 20px 30px;
+    letter-spacing: 1px;
+    }
+
+#clockStarter {
+    font-size: 60px;
+    }
+
+
+button {
+    width: 100px;
+    height: 30px;
+    border: 3px soldi white;
+    border-radius: 50px;
+    background: #202020;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+#stopwatch {
+    font: 20px,Arial;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 20px 30px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+#stopWatchStarter{
+    font-size: 60px;
+    }
+
+#buttons {
+    position: absolute;
+    top: 55%;
+    left: 48.4%;
+    transform: translate(-51.6%, -45%);
+}
+#buttons li {
+    display: inline;
+    padding-left: 10px;
+}

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>MyTestClock</title>
+
+        <link rel="stylesheet" href="style2-clock.css">
+    </head>
+    <body>
+        <div id="clock">
+			<h1>Running Clock</h1>
+			<h1 id="clockStarter"></h1>
+			<script>
+				clock = setInterval(()=>{
+											var nowTime = new Date();
+											var HRS = nowTime.getHours();
+											var MINS = nowTime.getMinutes();
+											var SS = nowTime.getSeconds();
+											document.getElementById("clockStarter").innerHTML = HRS + ' : ' + MINS + ' : ' + SS;
+										},1000);
+				
+			</script>
+		</div>
+		<br/>
+        
+        <div id="stopwatch">
+            <h1>Stop Watch</h1>
+            <h1 id="stopWatchStarter">00 : 00 : 00</h1>
+        </div>
+
+        <ul id="buttons">
+            <li><button onclick="startTimer()">Start</button></li>
+            <li><button onclick="stopTimer()">Stop</button></li>
+
+            <li><button onclick="resetTimer()">Reset</button></li>
+        </ul>
+
+        <script src="main.js"></script>
+    </body>
+</html>
