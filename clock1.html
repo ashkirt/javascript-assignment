@@ -9,12 +9,12 @@
 			<h1>Running Clock</h1>
 			<h1 id="clockStarter"></h1>
 			<script>
-				clock = setInterval(()=>{
-											var nowTime = new Date();
-											var HRS = nowTime.getHours();
-											var MINS = nowTime.getMinutes();
-											var SS = nowTime.getSeconds();
-											document.getElementById("clockStarter").innerHTML = HRS + ' : ' + MINS + ' : ' + SS;
+				clock = initiateClock(()=>{
+											let nowTime = new Date();
+											let hours = nowTime.getHours();
+											let mins = nowTime.getMinutes();
+											let seconds = nowTime.getSeconds();
+											document.getElementById("clockStarter").innerHTML = hours + ' : ' + mins + ' : ' + seconds;
 										},1000);
 				
 			</script>
